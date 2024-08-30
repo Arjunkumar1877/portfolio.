@@ -73,7 +73,7 @@ export const navItems = [
     {
       "id": 1,
       "title": "A domestic cum business use application",
-      "description": "Explore secure communication with strangers without sharing your personal data",
+      "des": "Explore secure communication with strangers without sharing your personal data",
       "img": "/Elitemediator.png",
       "iconLists": ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
       "link": "https://github.com/Arjunkumar1877/Elite-Mediator.git"
@@ -81,7 +81,7 @@ export const navItems = [
     {
       "id": 2,
       "title": "Ecommerce App for Readymade Furniture",
-      "description": "An Ecommerce app with all the functionalities of a typical ecommerce platform",
+      "des": "An Ecommerce app with all the functionalities of a typical ecommerce platform",
       "img": "/Woodpalace.png",
       "iconLists": ["/re.svg", "/node.svg", "/mongo.svg", "/css.svg"],
       "link": "https://github.com/Arjunkumar1877/Wood-palace-Ecommerce.git"
@@ -89,7 +89,7 @@ export const navItems = [
     {
       "id": 3,
       "title": "A Fullstack Password Manager",
-      "description": "Users can generate strong passwords, save and manage them securely",
+      "des": "Users can generate strong passwords, save and manage them securely",
       "img": "/Password.png",
       "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/express.svg"],
       "link": "https://github.com/Arjunkumar1877/Password-Manager.git"
@@ -97,7 +97,7 @@ export const navItems = [
     {
       "id": 4,
       "title": "My Personal Fullstack Blog",
-      "description": "A personal blog that reflects my skills and showcases all my projects",
+      "des": "A personal blog that reflects my skills and showcases all my projects",
       "img": "/Blog.png",
       "iconLists": ["/react.svg", "/node.svg", "/css.svg", "/mongo.svg"],
       "link": "https://github.com/Arjunkumar1877/MERN-BLOG.git"
@@ -105,7 +105,7 @@ export const navItems = [
     {
       "id": 5,
       "title": "A Fullstack Real Estate App",
-      "description": "Users can buy, sell, and rent properties on this real estate platform",
+      "des": "Users can buy, sell, and rent properties on this real estate platform",
       "img": "/Realestate.png",
       "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
       "link": "https://github.com/Arjunkumar1877/MERN_realestate.git"
@@ -113,7 +113,7 @@ export const navItems = [
     {
       "id": 6,
       "title": "A Fullstack Chat App",
-      "description": "A private one-to-one chat application for secure conversations",
+      "des": "A private one-to-one chat application for secure conversations",
       "img": "/ChatApp.png",
       "iconLists": ["/react.svg", "/socket.svg", "/node.svg", "/mongo.svg"],
       "link": "https://github.com/Arjunkumar1877/MERN-CHAT-APP.git"
@@ -121,7 +121,7 @@ export const navItems = [
     {
       "id": 7,
       "title": "A Video Calling App",
-      "description": "A simple video calling application with conference and one-to-one call support",
+      "des": "A simple video calling application with conference and one-to-one call support",
       "img": "/zoomify.png",
       "iconLists": ["/react.svg", "/webrtc.svg", "/node.svg", "/tail.svg"],
       "link": "https://github.com/Arjunkumar1877/Zego-Zoomify.git"
@@ -129,7 +129,7 @@ export const navItems = [
     {
       "id": 8,
       "title": "An X App Clone",
-      "description": "A fullstack clone of the X (Twitter) app using Next.js",
+      "des": "A fullstack clone of the X (Twitter) app using Next.js",
       "img": "/Xapp.png",
       "iconLists": ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
       "link": "https://github.com/Arjunkumar1877/x-next-app.git"
@@ -137,7 +137,7 @@ export const navItems = [
     {
       "id": 9,
       "title": "A Fullstack Food Delivery App",
-      "description": "A complete food delivery app with ordering and payment features",
+      "des": "A complete food delivery app with ordering and payment features",
       "img": "/Fooddelivery.png",
       "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/tail.svg"],
       "link": "https://github.com/Arjunkumar1877/FOOD-DELIVERY-APP.git"
@@ -145,7 +145,7 @@ export const navItems = [
     {
       "id": 10,
       "title": "A Fullstack Ecommerce App",
-      "description": "A fullstack ecommerce platform for purchasing dresses and apparel",
+      "des": "A fullstack ecommerce platform for purchasing dresses and apparel",
       "img": "/Ecommerce.png",
       "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
       "link": "https://github.com/Arjunkumar1877/MERN-ECOMMERCE.git"
@@ -153,7 +153,7 @@ export const navItems = [
     {
       "id": 11,
       "title": "An Amazon Frontend Clone",
-      "description": "A clone of the Amazon frontend with all major pages designed",
+      "des": "A clone of the Amazon frontend with all major pages designed",
       "img": "/Amazone.png",
       "iconLists": ["/react.svg", "/css.svg", "/js.svg"],
       "link": "https://github.com/Arjunkumar1877/ECOMMERCE-APP-STATIC.git"
@@ -161,7 +161,7 @@ export const navItems = [
     {
       "id": 12,
       "title": "A Facebook Frontend Clone",
-      "description": "A frontend clone of Facebook with a beautiful and responsive design",
+      "des": "A frontend clone of Facebook with a beautiful and responsive design",
       "img": "/Facebook.png",
       "iconLists": ["/react.svg", "/css.svg", "/js.svg"],
       "link": "https://github.com/Arjunkumar1877/react-facebook--clone.git"
@@ -169,7 +169,7 @@ export const navItems = [
     {
       "id": 13,
       "title": "A Fullstack Quiz App",
-      "description": "A quiz app where users can take and create quizzes using Next.js",
+      "des": "A quiz app where users can take and create quizzes using Next.js",
       "img": "/Quiz.png",
       "iconLists": ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
       "link": "https://github.com/Arjunkumar1877/Next-js-Quiz-app.git"
