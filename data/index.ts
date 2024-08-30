@@ -69,41 +69,115 @@ export const navItems = [
     },
   ];
   
-  export const projects = [
+  export const projects  = [
     {
-      id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      "id": 1,
+      "title": "A domestic cum business use application",
+      "description": "Explore secure communication with strangers without sharing your personal data",
+      "img": "/Elitemediator.png",
+      "iconLists": ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
+      "link": "https://github.com/Arjunkumar1877/Elite-Mediator.git"
     },
     {
-      id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      "id": 2,
+      "title": "Ecommerce App for Readymade Furniture",
+      "description": "An Ecommerce app with all the functionalities of a typical ecommerce platform",
+      "img": "/Woodpalace.png",
+      "iconLists": ["/re.svg", "/node.svg", "/mongo.svg", "/css.svg"],
+      "link": "https://github.com/Arjunkumar1877/Wood-palace-Ecommerce.git"
     },
     {
-      id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      "id": 3,
+      "title": "A Fullstack Password Manager",
+      "description": "Users can generate strong passwords, save and manage them securely",
+      "img": "/Password.png",
+      "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/express.svg"],
+      "link": "https://github.com/Arjunkumar1877/Password-Manager.git"
     },
     {
-      id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      "id": 4,
+      "title": "My Personal Fullstack Blog",
+      "description": "A personal blog that reflects my skills and showcases all my projects",
+      "img": "/Blog.png",
+      "iconLists": ["/react.svg", "/node.svg", "/css.svg", "/mongo.svg"],
+      "link": "https://github.com/Arjunkumar1877/MERN-BLOG.git"
     },
-  ];
+    {
+      "id": 5,
+      "title": "A Fullstack Real Estate App",
+      "description": "Users can buy, sell, and rent properties on this real estate platform",
+      "img": "/Realestate.png",
+      "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
+      "link": "https://github.com/Arjunkumar1877/MERN_realestate.git"
+    },
+    {
+      "id": 6,
+      "title": "A Fullstack Chat App",
+      "description": "A private one-to-one chat application for secure conversations",
+      "img": "/ChatApp.png",
+      "iconLists": ["/react.svg", "/socket.svg", "/node.svg", "/mongo.svg"],
+      "link": "https://github.com/Arjunkumar1877/MERN-CHAT-APP.git"
+    },
+    {
+      "id": 7,
+      "title": "A Video Calling App",
+      "description": "A simple video calling application with conference and one-to-one call support",
+      "img": "/zoomify.png",
+      "iconLists": ["/react.svg", "/webrtc.svg", "/node.svg", "/tail.svg"],
+      "link": "https://github.com/Arjunkumar1877/Zego-Zoomify.git"
+    },
+    {
+      "id": 8,
+      "title": "An X App Clone",
+      "description": "A fullstack clone of the X (Twitter) app using Next.js",
+      "img": "/Xapp.png",
+      "iconLists": ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
+      "link": "https://github.com/Arjunkumar1877/x-next-app.git"
+    },
+    {
+      "id": 9,
+      "title": "A Fullstack Food Delivery App",
+      "description": "A complete food delivery app with ordering and payment features",
+      "img": "/Fooddelivery.png",
+      "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/tail.svg"],
+      "link": "https://github.com/Arjunkumar1877/FOOD-DELIVERY-APP.git"
+    },
+    {
+      "id": 10,
+      "title": "A Fullstack Ecommerce App",
+      "description": "A fullstack ecommerce platform for purchasing dresses and apparel",
+      "img": "/Ecommerce.png",
+      "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
+      "link": "https://github.com/Arjunkumar1877/MERN-ECOMMERCE.git"
+    },
+    {
+      "id": 11,
+      "title": "An Amazon Frontend Clone",
+      "description": "A clone of the Amazon frontend with all major pages designed",
+      "img": "/Amazone.png",
+      "iconLists": ["/react.svg", "/css.svg", "/js.svg"],
+      "link": "https://github.com/Arjunkumar1877/ECOMMERCE-APP-STATIC.git"
+    },
+    {
+      "id": 12,
+      "title": "A Facebook Frontend Clone",
+      "description": "A frontend clone of Facebook with a beautiful and responsive design",
+      "img": "/Facebook.png",
+      "iconLists": ["/react.svg", "/css.svg", "/js.svg"],
+      "link": "https://github.com/Arjunkumar1877/react-facebook--clone.git"
+    },
+    {
+      "id": 13,
+      "title": "A Fullstack Quiz App",
+      "description": "A quiz app where users can take and create quizzes using Next.js",
+      "img": "/Quiz.png",
+      "iconLists": ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
+      "link": "https://github.com/Arjunkumar1877/Next-js-Quiz-app.git"
+    }
+  ]
   
+
+
   export const testimonials = [
     {
       quote:
