@@ -72,19 +72,21 @@ export const navItems = [
   export const projects  = [
     {
       "id": 1,
-      "title": "A domestic cum business use application",
+      "title": "Elite Mediator",
       "des": "Explore secure communication with strangers without sharing your personal data",
       "img": "/Elitemediator.png",
       "iconLists": ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
-      "link": "https://github.com/Arjunkumar1877/Elite-Mediator.git"
+      "link": "https://github.com/Arjunkumar1877/Elite-Mediator.git",
+      "videoLink": "https://youtu.be/CspVWTVggpU"
     },
     {
       "id": 2,
-      "title": "Ecommerce App for Readymade Furniture",
+      "title": "Woold Palace",
       "des": "An Ecommerce app with all the functionalities of a typical ecommerce platform",
       "img": "/Woodpalace.png",
       "iconLists": ["/re.svg", "/node.svg", "/mongo.svg", "/css.svg"],
-      "link": "https://github.com/Arjunkumar1877/Wood-palace-Ecommerce.git"
+      "link": "https://github.com/Arjunkumar1877/Wood-palace-Ecommerce.git",
+      "videoLink" : "https://youtu.be/J0lwRpYx6jc"
     },
     {
       "id": 3,
@@ -92,7 +94,8 @@ export const navItems = [
       "des": "Users can generate strong passwords, save and manage them securely",
       "img": "/Password.png",
       "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/express.svg"],
-      "link": "https://github.com/Arjunkumar1877/Password-Manager.git"
+      "link": "https://github.com/Arjunkumar1877/Password-Manager.git",
+       "videoLink" : ""
     },
     {
       "id": 4,
@@ -100,7 +103,8 @@ export const navItems = [
       "des": "A personal blog that reflects my skills and showcases all my projects",
       "img": "/Blog.png",
       "iconLists": ["/react.svg", "/node.svg", "/css.svg", "/mongo.svg"],
-      "link": "https://github.com/Arjunkumar1877/MERN-BLOG.git"
+      "link": "https://github.com/Arjunkumar1877/MERN-BLOG.git",
+       "videoLink" : "https://youtu.be/flRcFfFsA-k"
     },
     {
       "id": 5,
@@ -108,7 +112,8 @@ export const navItems = [
       "des": "Users can buy, sell, and rent properties on this real estate platform",
       "img": "/Realestate.png",
       "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
-      "link": "https://github.com/Arjunkumar1877/MERN_realestate.git"
+      "link": "https://github.com/Arjunkumar1877/MERN_realestate.git",
+       "videoLink" : "https://youtu.be/lG1OTdqoVAY"
     },
     {
       "id": 6,
@@ -116,7 +121,8 @@ export const navItems = [
       "des": "A private one-to-one chat application for secure conversations",
       "img": "/ChatApp.png",
       "iconLists": ["/react.svg", "/socket.svg", "/node.svg", "/mongo.svg"],
-      "link": "https://github.com/Arjunkumar1877/MERN-CHAT-APP.git"
+      "link": "https://github.com/Arjunkumar1877/MERN-CHAT-APP.git",
+       "videoLink" : "https://youtu.be/RWJfKe8sqsI"
     },
     {
       "id": 7,
@@ -124,15 +130,17 @@ export const navItems = [
       "des": "A simple video calling application with conference and one-to-one call support",
       "img": "/zoomify.png",
       "iconLists": ["/react.svg", "/webrtc.svg", "/node.svg", "/tail.svg"],
-      "link": "https://github.com/Arjunkumar1877/Zego-Zoomify.git"
+      "link": "https://github.com/Arjunkumar1877/Zego-Zoomify.git",
+       "videoLink" : ""
     },
     {
       "id": 8,
       "title": "An X App Clone",
-      "des": "A fullstack clone of the X (Twitter) app using Next.js",
+      "des": "A fullstack clone of the X (Twitter) app using Next.js. With minimal functionalities of a X app",
       "img": "/Xapp.png",
       "iconLists": ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
-      "link": "https://github.com/Arjunkumar1877/x-next-app.git"
+      "link": "https://github.com/Arjunkumar1877/x-next-app.git",
+       "videoLink" : ""
     },
     {
       "id": 9,
@@ -140,7 +148,8 @@ export const navItems = [
       "des": "A complete food delivery app with ordering and payment features",
       "img": "/Fooddelivery.png",
       "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/tail.svg"],
-      "link": "https://github.com/Arjunkumar1877/FOOD-DELIVERY-APP.git"
+      "link": "https://github.com/Arjunkumar1877/FOOD-DELIVERY-APP.git",
+       "videoLink" : "https://youtu.be/2WNX-d6Dmpo"
     },
     {
       "id": 10,
@@ -148,7 +157,8 @@ export const navItems = [
       "des": "A fullstack ecommerce platform for purchasing dresses and apparel",
       "img": "/Ecommerce.png",
       "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
-      "link": "https://github.com/Arjunkumar1877/MERN-ECOMMERCE.git"
+      "link": "https://github.com/Arjunkumar1877/MERN-ECOMMERCE.git",
+       "videoLink" : "https://youtu.be/JdWpFinceYk"
     },
     {
       "id": 11,
@@ -156,7 +166,8 @@ export const navItems = [
       "des": "A clone of the Amazon frontend with all major pages designed",
       "img": "/Amazone.png",
       "iconLists": ["/react.svg", "/css.svg", "/js.svg"],
-      "link": "https://github.com/Arjunkumar1877/ECOMMERCE-APP-STATIC.git"
+      "link": "https://github.com/Arjunkumar1877/ECOMMERCE-APP-STATIC.git",
+       "videoLink" : ""
     },
     {
       "id": 12,
@@ -164,7 +175,8 @@ export const navItems = [
       "des": "A frontend clone of Facebook with a beautiful and responsive design",
       "img": "/Facebook.png",
       "iconLists": ["/react.svg", "/css.svg", "/js.svg"],
-      "link": "https://github.com/Arjunkumar1877/react-facebook--clone.git"
+      "link": "https://github.com/Arjunkumar1877/react-facebook--clone.git",
+       "videoLink" : ""
     },
     {
       "id": 13,
@@ -172,7 +184,8 @@ export const navItems = [
       "des": "A quiz app where users can take and create quizzes using Next.js",
       "img": "/Quiz.png",
       "iconLists": ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
-      "link": "https://github.com/Arjunkumar1877/Next-js-Quiz-app.git"
+      "link": "https://github.com/Arjunkumar1877/Next-js-Quiz-app.git",
+       "videoLink" : ""
     }
   ]
   
