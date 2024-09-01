@@ -7,6 +7,8 @@ import animationData from '@/data/confetti.json';
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const BentoGrid = ({
   className,
@@ -49,6 +51,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState<boolean>(false);
+  const [downloaded, setDownloaded] = useState<boolean>(false);
   const handleCopy = ()=>{
     navigator.clipboard.writeText('arjun.tech177@gmail.com');
 
@@ -66,6 +69,20 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(1,28,12,0.9641106442577031) 0%, rgba(6,17,49,1) 50%, rgba(7,29,16,1) 100%)",
       }}
     >
+   
+   <ToastContainer
+position="bottom-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+/>
+
       <div className={`${id === 6 && 'flex justify-center'} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
@@ -89,6 +106,8 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+
+
         {id === 6 && (
           <BackgroundGradientAnimation>
             {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
@@ -107,6 +126,33 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg mb-2 lg:text-3xl max-w-96 z-10">
             {title}
           </div>
+          {
+  id === 1 && (
+    !downloaded && (
+      <button
+        onClick={() => {
+          toast.success('Resume downloaded successfully.', {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark"
+          });
+          setDownloaded(true);
+        }}
+        className="inline-flex h-12 w-full max-w-xs md:max-w-sm lg:max-w-md animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-4 md:px-6 font-medium text-slate-100 transition-colors duration-300 ease-in-out transform hover:scale-105 hover:bg-[linear-gradient(110deg,#1e2631,45%,#000103,55%,#1e2631)] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+      >
+        <a href="/Arjun kumar vs (MERN stack).pdf" download className="w-full h-full flex items-center justify-center">
+          Download Resume
+        </a>
+      </button>
+    )
+  )
+}
+
       
 
 {

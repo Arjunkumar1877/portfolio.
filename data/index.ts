@@ -5,21 +5,88 @@ export const navItems = [
     { name: "Contact", link: "#contact" },
   ];
   
+  // export const gridItems = [
+  //   {
+  //     id: 1,
+  //     title: "I am very much pashonate about my carrier and my future",
+  //     description: "",
+  //     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+  //     imgClassName: "w-full h-full",
+  //     titleClassName: "justify-end",
+  //     img: "/b1.svg",
+  //     spareImg: "",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "I'm very flexible with time zone communications",
+  //     description: "",
+  //     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+  //     imgClassName: "",
+  //     titleClassName: "justify-start",
+  //     img: "",
+  //     spareImg: "",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "My tech stack",
+  //     description: "I constantly try to improve",
+  //     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+  //     imgClassName: "",
+  //     titleClassName: "justify-center",
+  //     img: "",
+  //     spareImg: "",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Tech enthusiast with a passion for development.",
+  //     description: "",
+  //     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  //     imgClassName: "",
+  //     titleClassName: "justify-start",
+  //     img: "/grid.svg",
+  //     spareImg: "/b4.svg",
+  //   },
+  
+  //   {
+  //     id: 5,
+  //     title: "Currently building a JS Animation library",
+  //     description: "The Inside Scoop",
+  //     className: "md:col-span-3 md:row-span-2",
+  //     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+  //     titleClassName: "justify-center md:justify-start lg:justify-center",
+  //     img: "/b5.svg",
+  //     spareImg: "/grid.svg",
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Do you want to start a project together?",
+  //     description: "",
+  //     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  //     imgClassName: "",
+  //     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+  //     img: "",
+  //     spareImg: "",
+  //   },
+  // ];
+
+
+
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
+      title: "Passionate Developer Ready to Take On New Challenges",
+      description: "Skilled MERN stack developer with hands-on experience in over 10 projects.",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "https://images.unsplash.com/photo-1699885960867-56d5f5262d38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       spareImg: "",
+    
     },
     {
       id: 2,
-      title: "I'm very flexible with time zone communications",
-      description: "",
+      title: "Flexible with Global Communication",
+      description: "Eager to collaborate with teams across different time zones.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -28,8 +95,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
+      title: "My Tech Stack",
+      description: "Always learning and improving.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -38,19 +105,18 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
+      title: "Tech Enthusiast & Developer",
+      description: "Excited about creating solutions and learning new technologies.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "/grid.svg",
       spareImg: "/b4.svg",
     },
-  
     {
       id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
+      title: "Currently working on an Ecommerce-project",
+      description: "Get the inside scoop on my latest live project.",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,8 +125,8 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
+      title: "Let's Build Something Together",
+      description: "Reach out to start a new project or collaboration.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -68,6 +134,8 @@ export const navItems = [
       spareImg: "",
     },
   ];
+  
+
   
   export const projects  = [
     {
