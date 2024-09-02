@@ -122,11 +122,8 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[60vw] sm:w-[30vw] md:w-[20vw] lg:w-[15vw] xl:w-[10vw] relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-4"
-            style={{
-                background: "linear-gradient(90deg, rgba(15, 15, 15, 0.9) 0%, rgba(28, 30, 45, 0.8) 50%, rgba(40, 53, 62, 0.9) 100%)"
-
-            }}
+            className="w-[60vw] sm:w-[30vw] md:w-[20vw] lg:w-[15vw] xl:w-[10vw] relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-4 bg-gradient-to-b from-[#131c4a] to-[#000000]"
+        
             key={idx}
           >
             <blockquote>
