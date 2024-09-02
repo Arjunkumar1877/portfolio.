@@ -4,71 +4,6 @@ export const navItems = [
     { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
-  
-  // export const gridItems = [
-  //   {
-  //     id: 1,
-  //     title: "I am very much pashonate about my carrier and my future",
-  //     description: "",
-  //     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-  //     imgClassName: "w-full h-full",
-  //     titleClassName: "justify-end",
-  //     img: "/b1.svg",
-  //     spareImg: "",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "I'm very flexible with time zone communications",
-  //     description: "",
-  //     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-  //     imgClassName: "",
-  //     titleClassName: "justify-start",
-  //     img: "",
-  //     spareImg: "",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "My tech stack",
-  //     description: "I constantly try to improve",
-  //     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-  //     imgClassName: "",
-  //     titleClassName: "justify-center",
-  //     img: "",
-  //     spareImg: "",
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Tech enthusiast with a passion for development.",
-  //     description: "",
-  //     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-  //     imgClassName: "",
-  //     titleClassName: "justify-start",
-  //     img: "/grid.svg",
-  //     spareImg: "/b4.svg",
-  //   },
-  
-  //   {
-  //     id: 5,
-  //     title: "Currently building a JS Animation library",
-  //     description: "The Inside Scoop",
-  //     className: "md:col-span-3 md:row-span-2",
-  //     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-  //     titleClassName: "justify-center md:justify-start lg:justify-center",
-  //     img: "/b5.svg",
-  //     spareImg: "/grid.svg",
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "Do you want to start a project together?",
-  //     description: "",
-  //     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-  //     imgClassName: "",
-  //     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-  //     img: "",
-  //     spareImg: "",
-  //   },
-  // ];
-
 
 
   export const gridItems = [
@@ -259,39 +194,198 @@ export const navItems = [
   
 
 
+  
   export const testimonials = [
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      quote: "Node.js is an essential part of my stack.",
+      name: "Node.js",
+      title: "Backend Runtime",
+      iconKey: "nodejs",
     },
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      quote: "Next.js is my go-to for SSR and static site generation.",
+      name: "Next.js",
+      title: "Frontend Framework",
+      iconKey: "nextjs",
     },
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      quote: "TypeScript adds type safety and robustness to my projects.",
+      name: "TypeScript",
+      title: "Programming Language",
+      iconKey: "typescript",
     },
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      quote: "React.js helps me build dynamic UIs with ease.",
+      name: "React.js",
+      title: "Frontend Library",
+      iconKey: "reactjs",
     },
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      quote: "Express.js is my favorite minimalistic framework.",
+      name: "Express.js",
+      title: "Backend Framework",
+      iconKey: "expressjs",
+    },
+    {
+      quote: "MongoDB makes handling large datasets simple and efficient.",
+      name: "MongoDB",
+      title: "NoSQL Database",
+      iconKey: "mongodb",
+    },
+    {
+      quote: "Redux helps me manage complex app states effortlessly.",
+      name: "Redux",
+      title: "State Management",
+      iconKey: "redux",
+    },
+    {
+      quote: "Tailwind CSS allows me to style faster and more consistently.",
+      name: "Tailwind CSS",
+      title: "CSS Framework",
+      iconKey: "tailwind",
+    },
+    {
+      quote: "Docker helps me containerize applications easily.",
+      name: "Docker",
+      title: "Containerization Tool",
+      iconKey: "docker",
+    },
+    {
+      quote: "Clean Architecture structures my projects for scalability.",
+      name: "Clean Architecture",
+      title: "Architecture Pattern",
+      iconKey: "cleanarch",
+    },
+    {
+      quote: "MVC keeps my projects well-organized and modular.",
+      name: "MVC Architecture",
+      title: "Design Pattern",
+      iconKey: "mvc",
+    },
+    {
+      quote: "Socket.io enables real-time communication between server and client.",
+      name: "Socket.io",
+      title: "Real-time Communication",
+      iconKey: "socketio",
+    },
+    {
+      quote: "WebRTC makes peer-to-peer communication seamless.",
+      name: "WebRTC",
+      title: "Real-time Communication",
+      iconKey: "webrtc",
+    },
+    {
+      quote: "ZegoCloud simplifies real-time audio and video integration.",
+      name: "ZegoCloud",
+      title: "Real-time Communication",
+      iconKey: "zegocloud",
+    },
+    {
+      quote: "Data Structures are the backbone of efficient algorithms.",
+      name: "Data Structures",
+      title: "Computer Science",
+      iconKey: "datastructures",
+    },
+    {
+      quote: "Firebase enables rapid backend setup for any app.",
+      name: "Firebase",
+      title: "Backend as a Service",
+      iconKey: "firebase",
+    },
+    {
+      quote: "MySQL provides robust database management.",
+      name: "MySQL",
+      title: "Relational Database",
+      iconKey: "mysql",
+    },
+    {
+      quote: "PWA enables web apps to work offline and behave like native apps.",
+      name: "PWA",
+      title: "Web App Technology",
+      iconKey: "pwa",
+    },
+    {
+      quote: "Electron allows me to build cross-platform desktop applications.",
+      name: "Electron",
+      title: "Cross-Platform Framework",
+      iconKey: "electron",
+    },
+    {
+      quote: "SCSS makes writing complex stylesheets more manageable.",
+      name: "SCSS",
+      title: "CSS Preprocessor",
+      iconKey: "scss",
+    },
+    {
+      quote: "Postman simplifies API testing and documentation.",
+      name: "Postman",
+      title: "API Testing Tool",
+      iconKey: "postman",
+    },
+    {
+      quote: "Insomnia helps with streamlined API testing and debugging.",
+      name: "Insomnia",
+      title: "API Debugging Tool",
+      iconKey: "insomnia",
+    },
+    {
+      quote: "CI/CD streamlines development, testing, and deployment.",
+      name: "CI/CD",
+      title: "DevOps Pipeline",
+      iconKey: "cicd",
+    },
+    {
+      quote: "Figma is my go-to tool for UI/UX design.",
+      name: "Figma",
+      title: "Design Tool",
+      iconKey: "figma",
+    },
+    {
+      quote: "Zustand is perfect for simple and scalable state management.",
+      name: "Zustand",
+      title: "State Management Library",
+      iconKey: "zustand",
+    },
+    {
+      quote: "Vercel makes deploying full-stack apps incredibly simple.",
+      name: "Vercel",
+      title: "Cloud Platform",
+      iconKey: "vercel",
+    },
+    {
+      quote: "Render provides efficient server-side deployments.",
+      name: "Render",
+      title: "Cloud Platform",
+      iconKey: "render",
+    },
+    {
+      quote: "Netlify helps me deploy static sites with ease.",
+      name: "Netlify",
+      title: "Cloud Platform",
+      iconKey: "netlify",
+    },
+    {
+      quote: "Twilio makes messaging and communication easy to integrate.",
+      name: "Twilio",
+      title: "Communication API",
+      iconKey: "twilio",
+    },
+    {
+      quote: "RazorPay simplifies payment integration for online transactions.",
+      name: "RazorPay",
+      title: "Payment Gateway",
+      iconKey: "razorpay",
+    },
+    {
+      quote: "OAuth 2.0 provides secure authentication and authorization.",
+      name: "OAuth 2.0",
+      title: "Authorization Standard",
+      iconKey: "oauth",
     },
   ];
   
+
+
   export const companies = [
     {
       id: 1,
