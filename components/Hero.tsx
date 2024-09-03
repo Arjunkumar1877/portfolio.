@@ -1,54 +1,41 @@
+"use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { WavyBackground } from "./ui/wavy-background";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
-      <div className="">
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="green"
+    <WavyBackground className="max-w-4xl mx-auto pb-40 relative">
+      {/* Spotlight effects */}
+      {/* <div className="relative inset-0 z-0">
+       
+        <Spotlight className="top-0 left-0 h-[80vh] w-[50vw] " fill="white" />
+
+        <Spotlight className="top-0 right-0 h-[80vh] w-[50vw]" fill="white" />
+      </div> */}
+
+      {/* Hero content */}
+      <div className="flex flex-col items-center justify-center relative z-10">
+        <h2 className="uppercase tracking-widest text-xs text-center text-blue-100">
+          Dynamic Web Magic with MERN STACK
+        </h2>
+        <TextGenerateEffect
+          className="text-center text-[40px] md:text-5xl lg:text-6xl"
+          words="Crafting User-Centric Experiences"
         />
-        <Spotlight
-          className="-top-10 left-full h-[80vh] w-[50vw]"
-          fill="white"
-        />
-        <Spotlight className="-top-28 left-80 h-80vh w-[50vw]" fill="green" />
-        <Spotlight className="-top-2 left-8 h-80vh w-[50vw]" fill="white" />
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="green"
-        />
+
+        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-4xl">
+          Hi, I&apos;m Arjun Kumar VS, MERN Stack Developer based in India
+        </p>
+
+        <a href="#projects" title="Show my work">
+          <MagicButton title="Show My Works" icon={<FaLocationArrow />} position="right" />
+        </a>
       </div>
-
-      <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-        {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      </div>
-
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100">
-            Dynamic Web magic with MERN STACK
-          </h2>
-          <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Crafting User-Centric Experiences"
-          />
-
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-4xl">
-            Hi, I&apos;m Arjun kumar vs, MERN Stack Developer based in India
-          </p>
-
-          <a href="" title="Show my work" className="#about">
-            <MagicButton title="Show My Works" icon={<FaLocationArrow />} position="right" />
-          </a>
-        </div>
-      </div>
-    </div>
+    </WavyBackground>
   );
 };
 
