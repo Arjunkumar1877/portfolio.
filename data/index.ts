@@ -1,466 +1,460 @@
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
-  ];
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Tech stacks", link: "#techs" },
+  { name: "Contact", link: "#contact" },
+];
 
+export const gridItems = [
+  {
+    id: 1,
+    title: "Passionate Developer Ready to Take On New Challenges",
+    description:
+      "Skilled MERN stack developer with hands-on experience in over 10 projects.",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "https://images.unsplash.com/photo-1699885960867-56d5f5262d38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title: "Flexible with Global Communication",
+    description: "Eager to collaborate with teams across different time zones.",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 3,
+    title: "My Tech Stack",
+    description: "Always learning and improving.",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 4,
+    title: "Tech Enthusiast & Developer",
+    description:
+      "Excited about creating solutions and learning new technologies.",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "/grid.svg",
+    spareImg: "/b4.svg",
+  },
+  {
+    id: 5,
+    title: "Currently working on an Ecommerce-project",
+    description: "Get the inside scoop on my latest live project.",
+    className: "md:col-span-3 md:row-span-2",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
+    img: "/b5.svg",
+    spareImg: "/grid.svg",
+  },
+  {
+    id: 6,
+    title: "Let's Build Something Together",
+    description: "Reach out to start a new project or collaboration.",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
+];
 
-  export const gridItems = [
-    {
-      id: 1,
-      title: "Passionate Developer Ready to Take On New Challenges",
-      description: "Skilled MERN stack developer with hands-on experience in over 10 projects.",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
-      img: "https://images.unsplash.com/photo-1699885960867-56d5f5262d38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      spareImg: "",
-    
-    },
-    {
-      id: 2,
-      title: "Flexible with Global Communication",
-      description: "Eager to collaborate with teams across different time zones.",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 3,
-      title: "My Tech Stack",
-      description: "Always learning and improving.",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-center",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 4,
-      title: "Tech Enthusiast & Developer",
-      description: "Excited about creating solutions and learning new technologies.",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
-    },
-    {
-      id: 5,
-      title: "Currently working on an Ecommerce-project",
-      description: "Get the inside scoop on my latest live project.",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
-    },
-    {
-      id: 6,
-      title: "Let's Build Something Together",
-      description: "Reach out to start a new project or collaboration.",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
-      spareImg: "",
-    },
-  ];
-  
+export const projects = [
+  {
+    id: 1,
+    title: "Elite Mediator",
+    des: "Explore secure communication with strangers without sharing your personal data",
+    img: "/Elitemediator.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
+    link: "https://github.com/Arjunkumar1877/Elite-Mediator.git",
+    videoLink: "https://youtu.be/CspVWTVggpU",
+  },
+  {
+    id: 2,
+    title: "Woold Palace",
+    des: "An Ecommerce app with all the functionalities of a typical ecommerce platform",
+    img: "/Woodpalace.png",
+    iconLists: ["/re.svg", "/node.svg", "/mongo.svg", "/css.svg"],
+    link: "https://github.com/Arjunkumar1877/Wood-palace-Ecommerce.git",
+    videoLink: "https://youtu.be/J0lwRpYx6jc",
+  },
+  {
+    id: 3,
+    title: "A Fullstack Password Manager",
+    des: "Users can generate strong passwords, save and manage them securely",
+    img: "/Password.png",
+    iconLists: ["/react.svg", "/node.svg", "/mongo.svg", "/express.svg"],
+    link: "https://github.com/Arjunkumar1877/Password-Manager.git",
+    videoLink: "",
+  },
+  {
+    id: 4,
+    title: "My Personal Fullstack Blog",
+    des: "A personal blog that reflects my skills and showcases all my projects",
+    img: "/Blog.png",
+    iconLists: ["/react.svg", "/node.svg", "/css.svg", "/mongo.svg"],
+    link: "https://github.com/Arjunkumar1877/MERN-BLOG.git",
+    videoLink: "https://youtu.be/flRcFfFsA-k",
+  },
+  {
+    id: 5,
+    title: "A Fullstack Real Estate App",
+    des: "Users can buy, sell, and rent properties on this real estate platform",
+    img: "/Realestate.png",
+    iconLists: ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
+    link: "https://github.com/Arjunkumar1877/MERN_realestate.git",
+    videoLink: "https://youtu.be/lG1OTdqoVAY",
+  },
+  {
+    id: 6,
+    title: "A Fullstack Chat App",
+    des: "A private one-to-one chat application for secure conversations",
+    img: "/ChatApp.png",
+    iconLists: ["/react.svg", "/socket.svg", "/node.svg", "/mongo.svg"],
+    link: "https://github.com/Arjunkumar1877/MERN-CHAT-APP.git",
+    videoLink: "https://youtu.be/RWJfKe8sqsI",
+  },
+  {
+    id: 7,
+    title: "A Video Calling App",
+    des: "A simple video calling application with conference and one-to-one call support",
+    img: "/zoomify.png",
+    iconLists: ["/react.svg", "/webrtc.svg", "/node.svg", "/tail.svg"],
+    link: "https://github.com/Arjunkumar1877/Zego-Zoomify.git",
+    videoLink: "",
+  },
+  {
+    id: 8,
+    title: "An X App Clone",
+    des: "A fullstack clone of the X (Twitter) app using Next.js. With minimal functionalities of a X app",
+    img: "/Xapp.png",
+    iconLists: ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
+    link: "https://github.com/Arjunkumar1877/x-next-app.git",
+    videoLink: "",
+  },
+  {
+    id: 9,
+    title: "A Fullstack Food Delivery App",
+    des: "A complete food delivery app with ordering and payment features",
+    img: "/Fooddelivery.png",
+    iconLists: ["/react.svg", "/node.svg", "/mongo.svg", "/tail.svg"],
+    link: "https://github.com/Arjunkumar1877/FOOD-DELIVERY-APP.git",
+    videoLink: "https://youtu.be/2WNX-d6Dmpo",
+  },
+  {
+    id: 10,
+    title: "A Fullstack Ecommerce App",
+    des: "A fullstack ecommerce platform for purchasing dresses and apparel",
+    img: "/Ecommerce.png",
+    iconLists: ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
+    link: "https://github.com/Arjunkumar1877/MERN-ECOMMERCE.git",
+    videoLink: "https://youtu.be/JdWpFinceYk",
+  },
+  {
+    id: 11,
+    title: "An Amazon Frontend Clone",
+    des: "A clone of the Amazon frontend with all major pages designed",
+    img: "/Amazone.png",
+    iconLists: ["/react.svg", "/css.svg", "/js.svg"],
+    link: "https://github.com/Arjunkumar1877/ECOMMERCE-APP-STATIC.git",
+    videoLink: "",
+  },
+  {
+    id: 12,
+    title: "A Facebook Frontend Clone",
+    des: "A frontend clone of Facebook with a beautiful and responsive design",
+    img: "/Facebook.png",
+    iconLists: ["/react.svg", "/css.svg", "/js.svg"],
+    link: "https://github.com/Arjunkumar1877/react-facebook--clone.git",
+    videoLink: "",
+  },
+  {
+    id: 13,
+    title: "A Fullstack Quiz App",
+    des: "A quiz app where users can take and create quizzes using Next.js",
+    img: "/Quiz.png",
+    iconLists: ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
+    link: "https://github.com/Arjunkumar1877/Next-js-Quiz-app.git",
+    videoLink: "",
+  },
+];
 
-  
-  export const projects  = [
-    {
-      "id": 1,
-      "title": "Elite Mediator",
-      "des": "Explore secure communication with strangers without sharing your personal data",
-      "img": "/Elitemediator.png",
-      "iconLists": ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
-      "link": "https://github.com/Arjunkumar1877/Elite-Mediator.git",
-      "videoLink": "https://youtu.be/CspVWTVggpU"
-    },
-    {
-      "id": 2,
-      "title": "Woold Palace",
-      "des": "An Ecommerce app with all the functionalities of a typical ecommerce platform",
-      "img": "/Woodpalace.png",
-      "iconLists": ["/re.svg", "/node.svg", "/mongo.svg", "/css.svg"],
-      "link": "https://github.com/Arjunkumar1877/Wood-palace-Ecommerce.git",
-      "videoLink" : "https://youtu.be/J0lwRpYx6jc"
-    },
-    {
-      "id": 3,
-      "title": "A Fullstack Password Manager",
-      "des": "Users can generate strong passwords, save and manage them securely",
-      "img": "/Password.png",
-      "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/express.svg"],
-      "link": "https://github.com/Arjunkumar1877/Password-Manager.git",
-       "videoLink" : ""
-    },
-    {
-      "id": 4,
-      "title": "My Personal Fullstack Blog",
-      "des": "A personal blog that reflects my skills and showcases all my projects",
-      "img": "/Blog.png",
-      "iconLists": ["/react.svg", "/node.svg", "/css.svg", "/mongo.svg"],
-      "link": "https://github.com/Arjunkumar1877/MERN-BLOG.git",
-       "videoLink" : "https://youtu.be/flRcFfFsA-k"
-    },
-    {
-      "id": 5,
-      "title": "A Fullstack Real Estate App",
-      "des": "Users can buy, sell, and rent properties on this real estate platform",
-      "img": "/Realestate.png",
-      "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
-      "link": "https://github.com/Arjunkumar1877/MERN_realestate.git",
-       "videoLink" : "https://youtu.be/lG1OTdqoVAY"
-    },
-    {
-      "id": 6,
-      "title": "A Fullstack Chat App",
-      "des": "A private one-to-one chat application for secure conversations",
-      "img": "/ChatApp.png",
-      "iconLists": ["/react.svg", "/socket.svg", "/node.svg", "/mongo.svg"],
-      "link": "https://github.com/Arjunkumar1877/MERN-CHAT-APP.git",
-       "videoLink" : "https://youtu.be/RWJfKe8sqsI"
-    },
-    {
-      "id": 7,
-      "title": "A Video Calling App",
-      "des": "A simple video calling application with conference and one-to-one call support",
-      "img": "/zoomify.png",
-      "iconLists": ["/react.svg", "/webrtc.svg", "/node.svg", "/tail.svg"],
-      "link": "https://github.com/Arjunkumar1877/Zego-Zoomify.git",
-       "videoLink" : ""
-    },
-    {
-      "id": 8,
-      "title": "An X App Clone",
-      "des": "A fullstack clone of the X (Twitter) app using Next.js. With minimal functionalities of a X app",
-      "img": "/Xapp.png",
-      "iconLists": ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
-      "link": "https://github.com/Arjunkumar1877/x-next-app.git",
-       "videoLink" : ""
-    },
-    {
-      "id": 9,
-      "title": "A Fullstack Food Delivery App",
-      "des": "A complete food delivery app with ordering and payment features",
-      "img": "/Fooddelivery.png",
-      "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/tail.svg"],
-      "link": "https://github.com/Arjunkumar1877/FOOD-DELIVERY-APP.git",
-       "videoLink" : "https://youtu.be/2WNX-d6Dmpo"
-    },
-    {
-      "id": 10,
-      "title": "A Fullstack Ecommerce App",
-      "des": "A fullstack ecommerce platform for purchasing dresses and apparel",
-      "img": "/Ecommerce.png",
-      "iconLists": ["/react.svg", "/node.svg", "/mongo.svg", "/scss.svg"],
-      "link": "https://github.com/Arjunkumar1877/MERN-ECOMMERCE.git",
-       "videoLink" : "https://youtu.be/JdWpFinceYk"
-    },
-    {
-      "id": 11,
-      "title": "An Amazon Frontend Clone",
-      "des": "A clone of the Amazon frontend with all major pages designed",
-      "img": "/Amazone.png",
-      "iconLists": ["/react.svg", "/css.svg", "/js.svg"],
-      "link": "https://github.com/Arjunkumar1877/ECOMMERCE-APP-STATIC.git",
-       "videoLink" : ""
-    },
-    {
-      "id": 12,
-      "title": "A Facebook Frontend Clone",
-      "des": "A frontend clone of Facebook with a beautiful and responsive design",
-      "img": "/Facebook.png",
-      "iconLists": ["/react.svg", "/css.svg", "/js.svg"],
-      "link": "https://github.com/Arjunkumar1877/react-facebook--clone.git",
-       "videoLink" : ""
-    },
-    {
-      "id": 13,
-      "title": "A Fullstack Quiz App",
-      "des": "A quiz app where users can take and create quizzes using Next.js",
-      "img": "/Quiz.png",
-      "iconLists": ["/nextjs.svg", "/node.svg", "/mongo.svg", "/css.svg"],
-      "link": "https://github.com/Arjunkumar1877/Next-js-Quiz-app.git",
-       "videoLink" : ""
-    }
-  ]
-  
+export const testimonials = [
+  {
+    quote: "Node.js is an essential part of my stack.",
+    name: "Node.js",
+    title: "Backend Runtime",
+    iconKey: "nodejs",
+  },
+  {
+    quote: "Next.js is my go-to for SSR and static site generation.",
+    name: "Next.js",
+    title: "Frontend Framework",
+    iconKey: "nextjs",
+  },
+  {
+    quote: "TypeScript adds type safety and robustness to my projects.",
+    name: "TypeScript",
+    title: "Programming Language",
+    iconKey: "typescript",
+  },
+  {
+    quote: "React.js helps me build dynamic UIs with ease.",
+    name: "React.js",
+    title: "Frontend Library",
+    iconKey: "reactjs",
+  },
+  {
+    quote: "Express.js is my favorite minimalistic framework.",
+    name: "Express.js",
+    title: "Backend Framework",
+    iconKey: "expressjs",
+  },
+  {
+    quote: "MongoDB makes handling large datasets simple and efficient.",
+    name: "MongoDB",
+    title: "NoSQL Database",
+    iconKey: "mongodb",
+  },
+  {
+    quote: "Redux helps me manage complex app states effortlessly.",
+    name: "Redux",
+    title: "State Management",
+    iconKey: "redux",
+  },
+  {
+    quote: "Tailwind CSS allows me to style faster and more consistently.",
+    name: "Tailwind CSS",
+    title: "CSS Framework",
+    iconKey: "tailwind",
+  },
+  {
+    quote: "Docker helps me containerize applications easily.",
+    name: "Docker",
+    title: "Containerization Tool",
+    iconKey: "docker",
+  },
+  {
+    quote: "Clean Architecture structures my projects for scalability.",
+    name: "Clean Architecture",
+    title: "Architecture Pattern",
+    iconKey: "cleanarch",
+  },
+  {
+    quote: "MVC keeps my projects well-organized and modular.",
+    name: "MVC Architecture",
+    title: "Design Pattern",
+    iconKey: "mvc",
+  },
+  {
+    quote:
+      "Socket.io enables real-time communication between server and client.",
+    name: "Socket.io",
+    title: "Real-time Communication",
+    iconKey: "socketio",
+  },
+  {
+    quote: "WebRTC makes peer-to-peer communication seamless.",
+    name: "WebRTC",
+    title: "Real-time Communication",
+    iconKey: "webrtc",
+  },
+  {
+    quote: "ZegoCloud simplifies real-time audio and video integration.",
+    name: "ZegoCloud",
+    title: "Real-time Communication",
+    iconKey: "zegocloud",
+  },
+  {
+    quote: "Data Structures are the backbone of efficient algorithms.",
+    name: "Data Structures",
+    title: "Computer Science",
+    iconKey: "datastructures",
+  },
+  {
+    quote: "Firebase enables rapid backend setup for any app.",
+    name: "Firebase",
+    title: "Backend as a Service",
+    iconKey: "firebase",
+  },
+  {
+    quote: "MySQL provides robust database management.",
+    name: "MySQL",
+    title: "Relational Database",
+    iconKey: "mysql",
+  },
+  {
+    quote: "PWA enables web apps to work offline and behave like native apps.",
+    name: "PWA",
+    title: "Web App Technology",
+    iconKey: "pwa",
+  },
+  {
+    quote: "Electron allows me to build cross-platform desktop applications.",
+    name: "Electron",
+    title: "Cross-Platform Framework",
+    iconKey: "electron",
+  },
+  {
+    quote: "SCSS makes writing complex stylesheets more manageable.",
+    name: "SCSS",
+    title: "CSS Preprocessor",
+    iconKey: "scss",
+  },
+  {
+    quote: "Postman simplifies API testing and documentation.",
+    name: "Postman",
+    title: "API Testing Tool",
+    iconKey: "postman",
+  },
+  {
+    quote: "Insomnia helps with streamlined API testing and debugging.",
+    name: "Insomnia",
+    title: "API Debugging Tool",
+    iconKey: "insomnia",
+  },
+  {
+    quote: "CI/CD streamlines development, testing, and deployment.",
+    name: "CI/CD",
+    title: "DevOps Pipeline",
+    iconKey: "cicd",
+  },
+  {
+    quote: "Figma is my go-to tool for UI/UX design.",
+    name: "Figma",
+    title: "Design Tool",
+    iconKey: "figma",
+  },
+  {
+    quote: "Zustand is perfect for simple and scalable state management.",
+    name: "Zustand",
+    title: "State Management Library",
+    iconKey: "zustand",
+  },
+  {
+    quote: "Vercel makes deploying full-stack apps incredibly simple.",
+    name: "Vercel",
+    title: "Cloud Platform",
+    iconKey: "vercel",
+  },
+  {
+    quote: "Render provides efficient server-side deployments.",
+    name: "Render",
+    title: "Cloud Platform",
+    iconKey: "render",
+  },
+  {
+    quote: "Netlify helps me deploy static sites with ease.",
+    name: "Netlify",
+    title: "Cloud Platform",
+    iconKey: "netlify",
+  },
+  {
+    quote: "Twilio makes messaging and communication easy to integrate.",
+    name: "Twilio",
+    title: "Communication API",
+    iconKey: "twilio",
+  },
+  {
+    quote: "RazorPay simplifies payment integration for online transactions.",
+    name: "RazorPay",
+    title: "Payment Gateway",
+    iconKey: "razorpay",
+  },
+  {
+    quote: "OAuth 2.0 provides secure authentication and authorization.",
+    name: "OAuth 2.0",
+    title: "Authorization Standard",
+    iconKey: "oauth",
+  },
+];
 
+export const companies = [
+  {
+    id: 1,
+    name: "cloudinary",
+    img: "/cloud.svg",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 2,
+    name: "appwrite",
+    img: "/app.svg",
+    nameImg: "/appName.svg",
+  },
+  {
+    id: 3,
+    name: "HOSTINGER",
+    img: "/host.svg",
+    nameImg: "/hostName.svg",
+  },
+  {
+    id: 4,
+    name: "stream",
+    img: "/s.svg",
+    nameImg: "/streamName.svg",
+  },
+  {
+    id: 5,
+    name: "docker.",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
+  },
+];
 
-  
-  export const testimonials = [
-    {
-      quote: "Node.js is an essential part of my stack.",
-      name: "Node.js",
-      title: "Backend Runtime",
-      iconKey: "nodejs",
-    },
-    {
-      quote: "Next.js is my go-to for SSR and static site generation.",
-      name: "Next.js",
-      title: "Frontend Framework",
-      iconKey: "nextjs",
-    },
-    {
-      quote: "TypeScript adds type safety and robustness to my projects.",
-      name: "TypeScript",
-      title: "Programming Language",
-      iconKey: "typescript",
-    },
-    {
-      quote: "React.js helps me build dynamic UIs with ease.",
-      name: "React.js",
-      title: "Frontend Library",
-      iconKey: "reactjs",
-    },
-    {
-      quote: "Express.js is my favorite minimalistic framework.",
-      name: "Express.js",
-      title: "Backend Framework",
-      iconKey: "expressjs",
-    },
-    {
-      quote: "MongoDB makes handling large datasets simple and efficient.",
-      name: "MongoDB",
-      title: "NoSQL Database",
-      iconKey: "mongodb",
-    },
-    {
-      quote: "Redux helps me manage complex app states effortlessly.",
-      name: "Redux",
-      title: "State Management",
-      iconKey: "redux",
-    },
-    {
-      quote: "Tailwind CSS allows me to style faster and more consistently.",
-      name: "Tailwind CSS",
-      title: "CSS Framework",
-      iconKey: "tailwind",
-    },
-    {
-      quote: "Docker helps me containerize applications easily.",
-      name: "Docker",
-      title: "Containerization Tool",
-      iconKey: "docker",
-    },
-    {
-      quote: "Clean Architecture structures my projects for scalability.",
-      name: "Clean Architecture",
-      title: "Architecture Pattern",
-      iconKey: "cleanarch",
-    },
-    {
-      quote: "MVC keeps my projects well-organized and modular.",
-      name: "MVC Architecture",
-      title: "Design Pattern",
-      iconKey: "mvc",
-    },
-    {
-      quote: "Socket.io enables real-time communication between server and client.",
-      name: "Socket.io",
-      title: "Real-time Communication",
-      iconKey: "socketio",
-    },
-    {
-      quote: "WebRTC makes peer-to-peer communication seamless.",
-      name: "WebRTC",
-      title: "Real-time Communication",
-      iconKey: "webrtc",
-    },
-    {
-      quote: "ZegoCloud simplifies real-time audio and video integration.",
-      name: "ZegoCloud",
-      title: "Real-time Communication",
-      iconKey: "zegocloud",
-    },
-    {
-      quote: "Data Structures are the backbone of efficient algorithms.",
-      name: "Data Structures",
-      title: "Computer Science",
-      iconKey: "datastructures",
-    },
-    {
-      quote: "Firebase enables rapid backend setup for any app.",
-      name: "Firebase",
-      title: "Backend as a Service",
-      iconKey: "firebase",
-    },
-    {
-      quote: "MySQL provides robust database management.",
-      name: "MySQL",
-      title: "Relational Database",
-      iconKey: "mysql",
-    },
-    {
-      quote: "PWA enables web apps to work offline and behave like native apps.",
-      name: "PWA",
-      title: "Web App Technology",
-      iconKey: "pwa",
-    },
-    {
-      quote: "Electron allows me to build cross-platform desktop applications.",
-      name: "Electron",
-      title: "Cross-Platform Framework",
-      iconKey: "electron",
-    },
-    {
-      quote: "SCSS makes writing complex stylesheets more manageable.",
-      name: "SCSS",
-      title: "CSS Preprocessor",
-      iconKey: "scss",
-    },
-    {
-      quote: "Postman simplifies API testing and documentation.",
-      name: "Postman",
-      title: "API Testing Tool",
-      iconKey: "postman",
-    },
-    {
-      quote: "Insomnia helps with streamlined API testing and debugging.",
-      name: "Insomnia",
-      title: "API Debugging Tool",
-      iconKey: "insomnia",
-    },
-    {
-      quote: "CI/CD streamlines development, testing, and deployment.",
-      name: "CI/CD",
-      title: "DevOps Pipeline",
-      iconKey: "cicd",
-    },
-    {
-      quote: "Figma is my go-to tool for UI/UX design.",
-      name: "Figma",
-      title: "Design Tool",
-      iconKey: "figma",
-    },
-    {
-      quote: "Zustand is perfect for simple and scalable state management.",
-      name: "Zustand",
-      title: "State Management Library",
-      iconKey: "zustand",
-    },
-    {
-      quote: "Vercel makes deploying full-stack apps incredibly simple.",
-      name: "Vercel",
-      title: "Cloud Platform",
-      iconKey: "vercel",
-    },
-    {
-      quote: "Render provides efficient server-side deployments.",
-      name: "Render",
-      title: "Cloud Platform",
-      iconKey: "render",
-    },
-    {
-      quote: "Netlify helps me deploy static sites with ease.",
-      name: "Netlify",
-      title: "Cloud Platform",
-      iconKey: "netlify",
-    },
-    {
-      quote: "Twilio makes messaging and communication easy to integrate.",
-      name: "Twilio",
-      title: "Communication API",
-      iconKey: "twilio",
-    },
-    {
-      quote: "RazorPay simplifies payment integration for online transactions.",
-      name: "RazorPay",
-      title: "Payment Gateway",
-      iconKey: "razorpay",
-    },
-    {
-      quote: "OAuth 2.0 provides secure authentication and authorization.",
-      name: "OAuth 2.0",
-      title: "Authorization Standard",
-      iconKey: "oauth",
-    },
-  ];
-  
+export const workExperience = [
+  {
+    id: 1,
+    title: "Frontend Engineer Intern",
+    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Mobile App Dev - JSM Tech",
+    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Freelance App Dev Project",
+    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "Lead Frontend Developer",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+];
 
-
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
-  
-  export const workExperience = [
-    {
-      id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    },
-    {
-      id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
-    },
-  ];
-  
-  export const socialMedia = [
-    {
-      id: 1,
-      img: "/git.svg",
-    },
-    {
-      id: 2,
-      img: "/twit.svg",
-    },
-    {
-      id: 3,
-      img: "/link.svg",
-    },
-  ];
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+  },
+  {
+    id: 2,
+    img: "/twit.svg",
+  },
+  {
+    id: 3,
+    img: "/link.svg",
+  },
+];
