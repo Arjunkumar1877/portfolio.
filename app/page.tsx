@@ -7,6 +7,7 @@ import Describe from "../components/ui/Describe";
 import Experience from "@/components/Experience";
 import Connect from "@/components/Connect";
 
+
 export default function Home() {
   return (
   <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
@@ -17,7 +18,6 @@ export default function Home() {
      <RecentProjects />
      <Describe /> 
      <Experience />
-     
      <Connect />
     </div>
   </main>
