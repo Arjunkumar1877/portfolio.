@@ -19,16 +19,14 @@ const Hero = () => {
 
       {/* Hero content */}
       <div className="flex flex-col items-center justify-center relative z-10">
-        <h2 className="uppercase tracking-widest text-xs text-center text-blue-100">
-          Dynamic Web Magic with MERN STACK
-        </h2>
+
         <TextGenerateEffect
           className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          words="Crafting User-Centric Experiences"
+          words="Crafting User Centric Experiences"
         />
 
-        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-4xl">
-          Hi, I&apos;m Arjun Kumar VS, MERN Stack Developer based in India
+        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-4xl font-semibold">
+          Hi, I&apos;m Arjun, Fullstack Stack Developer based in India
         </p>
 
         <a href="#projects" title="Show my work">
