@@ -416,33 +416,34 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full-Stack Developer",
+    desc: "Developed and maintained complex full-stack Applications using MERN stack and Next.js technologies, ensuring seamless user experiences and robust functionalities.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "PWA and Electron App Developer",
+    desc: "Designed and built Progressive Web Apps (PWAs) and Electron applications, focusing on delivering high-performance, cross-platform solutions for diverse user needs.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Freelance Application Developer",
+    desc: "Led the development of various client-driven projects, including communication and social media applications, from conceptualization to deployment, ensuring client satisfaction and project success.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Problem Solver - MERN Stack Applications",
+    desc: "Engineered and delivered user-centric solutions by solving complex problems with MERN stack applications, including numerous clone projects and mini-projects, focusing on innovative and effective problem-solving.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
 ];
+
 
 export const socialMedia = [
   {
