@@ -431,7 +431,7 @@ export const workExperience = [
   {
     id: 3,
     title: "Freelance Application Developer",
-    desc: "Led the development of various client-driven projects, including communication and social media applications, from conceptualization to deployment, ensuring client satisfaction and project success.",
+    desc: "Led the development of various projects, including communication and social media applications, from conceptualization to deployment, ensuring client satisfaction and project success.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
