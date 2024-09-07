@@ -20,7 +20,7 @@ export default function Connect() {
             }}
             className="mt-8 bg-gradient-to-br from-slate-300 to-slate-100 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
           >
-            Interested in building something amazing together? Let's connect!
+            Interested in building something amazing together?
           </motion.h2>
 
         </LampContainer>
