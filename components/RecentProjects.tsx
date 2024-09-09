@@ -1,14 +1,34 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { projects } from "@/data";
 
+type ProjectDataType = {
+  id: number;
+  title: string;
+  des: string;
+  img: string;
+  link?: string;
+  videoLink?: string;
+};
+
 export function RecentProjects() {
+  const [projectData, setProjectData] = useState<ProjectDataType[]>(projects.slice(0, 5));
+
+  const handleShowMore = () => {
+    try {
+      setProjectData(projects);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="py-20 px-4 sm:px-6 lg:px-8" id="projects">
       <h1 className="text-3xl font-bold text-center mb-12">My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map(({ id, title, des, img, link, videoLink }) => (
+        {projectData.map(({ id, title, des, img, link, videoLink }) => (
           <CardContainer className="inter-var" key={id}>
             <CardBody className="relative group/card w-full h-auto rounded-xl p-6 border bg-gradient-to-b from-[#131c4a] to-[#000000] dark:border-white/[0.2] dark:bg-black dark:text-white border-black/[0.1] transition-transform duration-300 transform hover:scale-105">
               <CardItem
@@ -68,6 +88,16 @@ export function RecentProjects() {
           </CardContainer>
         ))}
       </div>
+
+      {/* Center the "Show More" button */}
+      {projectData.length !== projects.length && (
+        <div className="flex justify-center mt-8">
+       
+                 <button    onClick={handleShowMore} className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+          Show More
+</button>
+        </div>
+      )}
     </div>
   );
 }
