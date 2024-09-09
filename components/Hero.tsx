@@ -21,13 +21,17 @@ const Hero = () => {
       <div className="flex flex-col items-center justify-center relative z-10">
 
         <TextGenerateEffect
-          className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          words="Crafting User Centric Experiences"
+          className="text-center text-[40px] md:text-5xl lg:text-6xl mt-14"
+          words="Hi, I&apos;m Arjun, Fullstack Developer based in India"
         />
 
-        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-4xl font-semibold">
+<TextGenerateEffect
+          className="text-center   md:tracking-wider mb-4 text-2xl md:text-2xl lg:text-4xl font-semibold"
+          words="Crafting User Centric Experiences"
+        />
+        {/* <p className="text-center md:tracking-wider mb-4 text-2xl md:text-2xl lg:text-4xl font-semibold">
           Hi, I&apos;m Arjun, Fullstack Stack Developer based in India
-        </p>
+        </p> */}
 
         <a href="#projects" title="Show my work">
           <MagicButton title="Show My Works" icon={<FaLocationArrow />} position="right" />
