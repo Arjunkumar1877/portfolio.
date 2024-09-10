@@ -68,9 +68,9 @@ export const FloatingNav = ({
             )}
           >
             {/* Show icon always */}
-            <span className="block">{navItem.icon}</span>
+            <span className="block sm:hidded">{navItem.icon}</span>
             {/* Show text on all screen sizes */}
-            <span className="block text-xs sm:text-sm">{navItem.name}</span>
+            <span className="block  sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>

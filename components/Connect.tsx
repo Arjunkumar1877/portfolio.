@@ -37,12 +37,14 @@ export default function Connect() {
           }}
           className="-mt-52"
         >
-          <MagicButton
-            title="Let's connect"
-            icon={<FaLocationArrow />}
-            position="right"
-            otherClasses="px-8 py-3"
-          />
+          <a href="mailto:arjun.tech177@gmail.com">
+
+
+          <button     className="z-30 relative shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+          Let&apos;s connect
+</button>
+
+          </a>
         </motion.div>
       </div>
     </div>
