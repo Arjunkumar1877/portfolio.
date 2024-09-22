@@ -19,7 +19,7 @@ const Footer = () => {
 
       <div className="flex flex-col-reverse md:flex-row justify-between items-center w-full mt-16 px-4 lg:px-0">
         <p className="md:text-base text-sm font-light text-center md:text-left mt-4 md:mt-0">
-          &copy; 2024 Arjun Kumar | All rights reserved
+          &copy; 2024 Arjun Kumar vs | All rights reserved
         </p>
 
         <div className="flex items-center md:gap-3 gap-4">

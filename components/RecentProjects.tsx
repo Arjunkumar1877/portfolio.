@@ -15,7 +15,7 @@ type ProjectDataType = {
 };
 
 export function RecentProjects() {
-  const [projectData, setProjectData] = useState<ProjectDataType[]>(projects.slice(0, 5));
+  const [projectData, setProjectData] = useState<ProjectDataType[]>(projects.slice(0, 6));
 
   const handleShowMore = () => {
     try {
