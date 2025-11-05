@@ -3,10 +3,12 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
-import animationData from '@/data/confetti.json';
-import Lottie from "react-lottie";
+// Removed `react-lottie` usage because it caused a runtime error during
+// unmount in some environments. We'll use a lightweight, safe confetti
+// indicator instead.
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import Confetti from "./Confetti";
 import 'react-toastify/dist/ReactToastify.css';
 
 export const BentoGrid = ({
@@ -161,17 +163,9 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0`}>
-                <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData: animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: 'xMidYm slice'
-                    }
-                  }}
-                />
+              {/* Simple, dependency-free visual feedback instead of Lottie */}
+              <div className="absolute -bottom-5 right-0 w-40 h-24">
+                {copied ? <Confetti count={6} /> : null}
               </div>
               <MagicButton
                 title={copied ? 'Email copied' : "Copy my email"}
