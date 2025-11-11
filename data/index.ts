@@ -50,14 +50,16 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Currently working on an Ecommerce-project",
-    description: "Get the inside scoop on my latest live project.",
+    title: "Full-Stack Developer at Fleapo.co",
+    description:
+      "Currently working as a Full-Stack Developer at Fleapo.co, contributing to the development of multiple large-scale projects, including two major live products.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
   },
+
   {
     id: 6,
     title: "Let's Build Something Together",
@@ -462,23 +464,20 @@ export const workExperience = [
   },
 ];
 
-
-
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    url: 'https://github.com/Arjunkumar1877'
+    url: "https://github.com/Arjunkumar1877",
   },
   {
     id: 2,
     img: "/twit.svg",
-    url: 'https://x.com/Arjunkumar5771'  
+    url: "https://x.com/Arjunkumar5771",
   },
   {
     id: 3,
     img: "/link.svg",
-    url: 'https://www.linkedin.com/in/arjun-kumar-vs'
+    url: "https://www.linkedin.com/in/arjun-kumar-vs",
   },
 ];
-
