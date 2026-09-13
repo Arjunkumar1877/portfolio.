@@ -1,16 +1,17 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Tech stacks", link: "#techs" },
+  { name: "Experience", link: "#experience" },
+  { name: "Skills", link: "#techs" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "Passionate Developer Ready to Take On New Challenges",
+    title: "Shipping production software, not just demos",
     description:
-      "Skilled MERN stack developer with hands-on experience in over 10 projects.",
+      "Full-stack engineer with nearly two years of industry experience building TypeScript and Next.js products.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -19,8 +20,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Flexible with Global Communication",
-    description: "Eager to collaborate with teams across different time zones.",
+    title: "Comfortable with distributed teams",
+    description: "I work across time zones with clear written communication and async-first habits.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -29,8 +30,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My Tech Stack",
-    description: "Always learning and improving.",
+    title: "Current stack",
+    description: "TypeScript-first, production-focused, still learning.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -39,9 +40,9 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech Enthusiast & Developer",
+    title: "Product-minded engineer",
     description:
-      "Excited about creating solutions and learning new technologies.",
+      "I care about reliability, accessibility, and shipping work users can actually use.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -50,9 +51,9 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Full-Stack Developer at Fleapo.co",
+    title: "Software Developer at Fleapo",
     description:
-      "Currently working as a Full-Stack Developer at Fleapo.co, contributing to the development of multiple large-scale projects, including two major live products.",
+      "Since October 2024, shipping full-stack features for production products with TypeScript, Next.js, and two major live applications.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -62,8 +63,8 @@ export const gridItems = [
 
   {
     id: 6,
-    title: "Let's Build Something Together",
-    description: "Reach out to start a new project or collaboration.",
+    title: "Let's build something useful",
+    description: "Available for roles, freelance work, and product collaboration.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -80,16 +81,16 @@ export const projects = [
     img: "/Elitemediator.png",
     link: "https://github.com/Arjunkumar1877/Elite-Mediator.git",
     videoLink: "https://youtu.be/CspVWTVggpU",
-    liveLink: "https://elitemediator.shop/",
+    liveLink: "",
   },
   {
     id: 2,
-    title: "Woold Palace",
+    title: "Wood Palace",
     des: "An Ecommerce app with all the functionalities of a typical ecommerce platform",
     img: "/Woodpalace.png",
     link: "https://github.com/Arjunkumar1877/Wood-palace-Ecommerce.git",
     videoLink: "https://youtu.be/J0lwRpYx6jc",
-    liveLink: "http://woodpalace.live/user",
+    liveLink: "",
   },
   {
     id: 3,
@@ -98,7 +99,7 @@ export const projects = [
     img: "/Password.png",
     link: "https://github.com/Arjunkumar1877/Password-Manager.git",
     videoLink: "",
-    liveLink: "https://pm-client-brocodes-projects-0d98f139.vercel.app/",
+    liveLink: "",
   },
   {
     id: 4,
@@ -134,7 +135,7 @@ export const projects = [
     img: "/zoomify.png",
     link: "https://github.com/Arjunkumar1877/Zego-Zoomify.git",
     videoLink: "",
-    liveLink: "https://zego-zoomify.vercel.app/",
+    liveLink: "",
   },
   {
     id: 8,
@@ -143,7 +144,7 @@ export const projects = [
     img: "/Xapp.png",
     link: "https://github.com/Arjunkumar1877/x-next-app.git",
     videoLink: "",
-    liveLink: "https://x-next-app.vercel.app/",
+    liveLink: "",
   },
   {
     id: 9,
@@ -197,7 +198,7 @@ export const projects = [
     img: "/Olx.png",
     link: "https://github.com/Arjunkumar1877/OLX-clone-.git",
     videoLink: "",
-    liveLink: "https://olx-clone-iota-seven.vercel.app/",
+    liveLink: "",
   },
   {
     id: 15,
@@ -206,7 +207,7 @@ export const projects = [
     img: "/Netflix.png",
     link: "https://github.com/Arjunkumar1877/NetflixClone.git",
     videoLink: "",
-    liveLink: "https://netflix-clone-brocodes-projects-0d98f139.vercel.app/",
+    liveLink: "",
   },
 ];
 
@@ -224,10 +225,28 @@ export const testimonials = [
     iconKey: "nextjs",
   },
   {
+    quote: "NestJS helps me structure scalable backend APIs.",
+    name: "NestJS",
+    title: "Backend Framework",
+    iconKey: "nestjs",
+  },
+  {
+    quote: "TanStack Query keeps server state predictable and fast.",
+    name: "TanStack Query",
+    title: "Data Fetching",
+    iconKey: "tanstack",
+  },
+  {
     quote: "TypeScript adds type safety and robustness to my projects.",
     name: "TypeScript",
     title: "Programming Language",
     iconKey: "typescript",
+  },
+  {
+    quote: "Zod keeps runtime validation aligned with TypeScript types.",
+    name: "Zod",
+    title: "Schema Validation",
+    iconKey: "zod",
   },
   {
     quote: "React.js helps me build dynamic UIs with ease.",
@@ -436,47 +455,54 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full-Stack Developer",
-    desc: "Developed and maintained complex full-stack Applications using MERN stack and Next.js technologies, ensuring seamless user experiences and robust functionalities.",
+    title: "Software Developer — Fleapo",
+    period: "Oct 2024 – Present",
+    desc: "Shipping TypeScript and Next.js features to production with cross-functional teams — APIs, UI, and two major live products.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "PWA and Electron App Developer",
-    desc: "Designed and built Progressive Web Apps (PWAs) and Electron applications, focusing on delivering high-performance, cross-platform solutions for diverse user needs.",
-    className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
     title: "Freelance Application Developer",
-    desc: "Led the development of various projects, including communication and social media applications, from conceptualization to deployment, ensuring client satisfaction and project success.",
+    period: "2023 – Present",
+    desc: "Led communication, ecommerce, and social apps from concept to deployment, working directly with clients through launch and iteration.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
-    id: 4,
-    title: "Problem Solver - MERN Stack Applications",
-    desc: "Engineered and delivered user-centric solutions by solving complex problems with MERN stack applications, including numerous clone projects and mini-projects, focusing on innovative and effective problem-solving.",
+    id: 3,
+    title: "MERN Stack Developer — Brototype",
+    period: "2023 – 2024",
+    desc: "Completed intensive full-stack training and shipped 10+ applications spanning ecommerce, real-time chat, media, and marketplace products.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+  },
+  {
+    id: 4,
+    title: "PWA and Electron App Developer",
+    period: "2023 – 2024",
+    desc: "Designed Progressive Web Apps and Electron applications focused on high-performance, cross-platform experiences.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
+    name: "GitHub",
     img: "/git.svg",
     url: "https://github.com/Arjunkumar1877",
   },
   {
     id: 2,
+    name: "X",
     img: "/twit.svg",
     url: "https://x.com/Arjunkumar5771",
   },
   {
     id: 3,
+    name: "LinkedIn",
     img: "/link.svg",
     url: "https://www.linkedin.com/in/arjun-kumar-vs",
   },
