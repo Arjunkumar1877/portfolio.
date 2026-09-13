@@ -22,30 +22,28 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
 
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const previous = scrollYProgress.getPrevious() ?? 0;
+      const direction = current - previous;
 
       if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
+        setVisible(true);
       } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        setVisible(direction < 0);
       }
     }
   });
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div
+      <motion.nav
+        aria-label="Primary"
         initial={{
           opacity: 1,
-          y: -100,
+          y: 0,
         }}
         animate={{
           y: visible ? 0 : -100,
@@ -59,21 +57,19 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem, idx) => (
           <Link
-            key={`link=${idx}`}
+            key={`link-${idx}`}
             href={navItem.link}
             className={cn(
               "relative text-center flex flex-col items-center space-x-1 text-neutral-600 dark:text-neutral-50 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
           >
-            {/* Show icon always */}
-            <span className="block sm:hidded">{navItem.icon}</span>
-            {/* Show text on all screen sizes */}
-            <span className="block  sm:block text-sm">{navItem.name}</span>
+            {navItem.icon && <span className="block">{navItem.icon}</span>}
+            <span className="block text-sm">{navItem.name}</span>
           </Link>
         ))}
-      </motion.div>
+      </motion.nav>
     </AnimatePresence>
   );
 };

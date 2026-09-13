@@ -11,15 +11,20 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
-    <div className="max-w-7xl w-full">
+      <a href="#content" className="skip-link">
+        Skip to content
+      </a>
+      <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
-        <Hero />
-        <Grid />
-        <RecentProjects />
-        <Describe />
-        <Experience />
-        <Connect />
-        <Footer />
+        <div id="content">
+          <Hero />
+          <Grid />
+          <RecentProjects />
+          <Experience />
+          <Describe />
+          <Connect />
+          <Footer />
+        </div>
       </div>
     </main>
   );

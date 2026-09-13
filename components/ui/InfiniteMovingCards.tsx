@@ -3,40 +3,44 @@
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
-// Sample icon URLs for the stacks
-const techIcons: any = {
-    nodejs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    nextjs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    typescript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    reactjs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    expressjs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    mongodb: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    redux: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-    tailwind: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhoXisDruJMDAq3Ltd-wuaMW2lGxck9wAKw&s",
-    docker: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    cleanarch: "https://miro.medium.com/v2/resize:fit:800/1*0R0r00uF1RyRFxkxo3HVDg.png",
-    mvc: "https://learn.microsoft.com/en-us/aspnet/core/mvc/overview/_static/mvc.png?view=aspnetcore-8.0",
-    socketio: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
-    webrtc: "https://webrtc.github.io/webrtc-org/assets/images/webrtc-logo-vert-retro-255x305.png",
-    zegocloud: "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/fogndramdrsfrgfsjf5m",
-    datastructures: "https://miro.medium.com/v2/resize:fit:1400/1*J38nYZU7gzu-4lQmtjlSUw.jpeg",
-    firebase: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-    mysql: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-    pwa: "https://miro.medium.com/v2/resize:fit:1400/1*AhFm0XyjfG7A_ZG5hC-Hyg.png",
-    electron: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
-    scss: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-    postman: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqPARNK1AQ86vt-kFVrGjRrJtZUNcT3-szdg&s",
-    insomnia: "https://assets.apidog.com/blog/2023/05/insomnia.png",
-    cicd: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAABUoTg0hRIRysVXsNZg21ojLCOSsljUElA&s",
-    figma: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-    zustand: "https://miro.medium.com/v2/resize:fit:1200/1*4ej-1rHTfJ5ji7_5XscrWg.jpeg",
-    vercel: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
-    render: "https://cdn.sanity.io/images/hvk0tap5/production/cb7ff287cdf28d8115569e91e856e9b6441bc7a6-3840x2146.png",
-    netlify: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
-    twilio: "https://cdn.intuji.com/2022/05/What-Is-Twilio-scaled-1.jpg",
-    razorpay: "https://d6xcmfyh68wv8.cloudfront.net/newsroom-content/uploads/2022/07/Razorpay_payments.png",
-    oauth: "https://www.tech101.in/wp-content/uploads/2016/09/x001-oauth-logo.png.pagespeed.ic.BKxLtqgu9O.png",
-  };
+const FALLBACK_ICON = "/tech/fallback.svg";
+
+export const techIcons: Record<string, string> = {
+  nodejs: "https://cdn.simpleicons.org/nodedotjs/5FA04E",
+  nextjs: "https://cdn.simpleicons.org/nextdotjs/111111",
+  nestjs: "https://cdn.simpleicons.org/nestjs/E0234E",
+  tanstack: "https://cdn.simpleicons.org/reactquery/FF4154",
+  typescript: "https://cdn.simpleicons.org/typescript/3178C6",
+  zod: "https://cdn.simpleicons.org/zod/3E67B1",
+  reactjs: "https://cdn.simpleicons.org/react/61DAFB",
+  expressjs: "https://cdn.simpleicons.org/express/111111",
+  mongodb: "https://cdn.simpleicons.org/mongodb/47A248",
+  redux: "https://cdn.simpleicons.org/redux/764ABC",
+  tailwind: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+  docker: "https://cdn.simpleicons.org/docker/2496ED",
+  cleanarch: "/tech/cleanarch.svg",
+  mvc: "/tech/mvc.svg",
+  socketio: "https://cdn.simpleicons.org/socketdotio/111111",
+  webrtc: "https://cdn.simpleicons.org/webrtc/333333",
+  zegocloud: "/tech/zegocloud.svg",
+  datastructures: "/tech/datastructures.svg",
+  firebase: "https://cdn.simpleicons.org/firebase/FFCA28",
+  mysql: "https://cdn.simpleicons.org/mysql/4479A1",
+  pwa: "https://cdn.simpleicons.org/pwa/5A0FC8",
+  electron: "https://cdn.simpleicons.org/electron/47848F",
+  scss: "https://cdn.simpleicons.org/sass/CC6699",
+  postman: "https://cdn.simpleicons.org/postman/FF6C37",
+  insomnia: "https://cdn.simpleicons.org/insomnia/4000BF",
+  cicd: "https://cdn.simpleicons.org/githubactions/2088FF",
+  figma: "https://cdn.simpleicons.org/figma/F24E1E",
+  zustand: "/tech/zustand.svg",
+  vercel: "https://cdn.simpleicons.org/vercel/111111",
+  render: "https://cdn.simpleicons.org/render/46E3B7",
+  netlify: "https://cdn.simpleicons.org/netlify/00C7B7",
+  twilio: "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/twilio.svg",
+  razorpay: "https://cdn.simpleicons.org/razorpay/072654",
+  oauth: "https://cdn.simpleicons.org/openid/F78C40",
+};
   
 export const InfiniteMovingCards = ({
   items,
@@ -132,12 +136,16 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <div className="relative z-20 flex flex-col items-center justify-center text-center">
-                {/* Tech stack icon */}
-                <img
-                  src={techIcons[item.iconKey]}
-                  alt={`${item.iconKey} icon`}
-                  className="w-12 h-12 mb-3"
-                />
+                <div className="w-14 h-14 mb-3 rounded-xl bg-white flex items-center justify-center p-2">
+                  <img
+                    src={techIcons[item.iconKey] || FALLBACK_ICON}
+                    alt={`${item.name} icon`}
+                    className="w-10 h-10 object-contain"
+                    onError={(event) => {
+                      event.currentTarget.src = FALLBACK_ICON;
+                    }}
+                  />
+                </div>
                 <span className="text-sm leading-[1.6] text-gray-100 font-normal">
                   {item.quote}
                 </span>

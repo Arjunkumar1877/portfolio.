@@ -26,11 +26,13 @@ export function RecentProjects() {
   };
 
   return (
-    <div className="py-20 px-4 sm:px-6 lg:px-8" id="projects">
-      <h1 className="text-3xl font-bold text-center mb-12">My Projects</h1>
+    <section className="py-20 px-4 sm:px-6 lg:px-8" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" className="heading mb-12">
+        Selected <span className="text-green-500">work</span>
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectData.map(({ id, title, des, img, link, videoLink, liveLink }) => (
-          <CardContainer className="inter-var" key={id}>
+          <CardContainer className="inter-var" containerClassName="py-4" key={id}>
             <CardBody className="relative group/card w-full h-auto rounded-xl p-6 border bg-gradient-to-b from-[#131c4a] to-[#000000] dark:border-white/[0.2] dark:bg-black dark:text-white border-black/[0.1] transition-transform duration-300 transform hover:scale-105">
               <CardItem
                 translateZ="50"
@@ -116,7 +118,7 @@ export function RecentProjects() {
           </button>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 

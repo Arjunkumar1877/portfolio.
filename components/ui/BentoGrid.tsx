@@ -9,6 +9,7 @@ import { useState } from "react";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import Confetti from "./Confetti";
+import { site } from "@/lib/site";
 import 'react-toastify/dist/ReactToastify.css';
 
 export const BentoGrid = ({
@@ -55,14 +56,14 @@ export const BentoGridItem = ({
   const [downloaded, setDownloaded] = useState<boolean>(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('arjun.tech177@gmail.com');
+    navigator.clipboard.writeText(site.email);
     setCopied(true);
   };
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Arjun kumar vs (MERN stack).pdf';
-    link.download = 'Arjun_kumar_vs_MERN_stack.pdf';
+    link.href = encodeURI('/Arjun kumar vs (MERN stack).pdf');
+    link.download = 'Arjun_Kumar_VS_Resume.pdf';
     link.click();
 
     setDownloaded(true);
@@ -83,8 +84,8 @@ export const BentoGridItem = ({
           {img && (
             <img
               src={img}
-              alt={img}
-              className={cn(imgClassName, "object-cover, object-center")}
+              alt={typeof title === "string" ? title : "Background"}
+              className={cn(imgClassName, "object-cover object-center")}
             />
           )}
         </div>
@@ -97,7 +98,7 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              className={"object-cover, object-center w-full h-full"}
+              className={"object-cover object-center w-full h-full"}
             />
           )}
         </div>
@@ -137,7 +138,7 @@ export const BentoGridItem = ({
             <div className="flex gap-1 w-fit absolute -right-3 lg:-right-1">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 ">
-                {['Typescript', 'React.js', 'Next.js'].map((item, i) => (
+                {['TypeScript', 'Next.js', 'React'].map((item, i) => (
                   <span
                     key={i}
                     className="py-2 px-3 text-xs opacity-50 rounded-lg text-center bg-[#10132E]"
@@ -149,7 +150,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 ">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
-                {['Node.js', 'Mongo.Db', 'Express.js'].map((item, i) => (
+                {['Node.js', 'NestJS', 'Zod'].map((item, i) => (
                   <span
                     key={i}
                     className="py-2 px-3 text-xs opacity-50 rounded-lg text-center bg-[#10132E]"
